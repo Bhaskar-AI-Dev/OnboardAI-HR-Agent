@@ -10,6 +10,7 @@ OnboardAI is an autonomous Multi-Agent System designed to automate the repetitiv
 * **📧 Communication Agent:** Drafts personalized welcome emails via Gmail API using the new employee's details.
 * **🧠 Policy RAG Agent:** Powered by **Google Gemini 2.0 Flash**, it acts as an expert HR assistant, answering queries about company policies (leaves, WFH, timings) with context-aware accuracy.
 * **👀 Observability:** Real-time logs in the sidebar show the agent's "thought process" and tool execution.
+* **💾 Session Memory:** Maintains conversation context and task history throughout the user session.
 
 ## 🛠️ Tech Stack
 * **Core AI:** Google Gemini 2.0 Flash
@@ -43,4 +44,14 @@ The system uses an **Orchestrator Pattern**:
     ```
 
 ---
+## 📂 Project Structure
+```text
+OnboardAI-HR-Agent/
+├── app.py               # Main Application Code (Streamlit + Agents)
+├── requirements.txt     # Python Dependencies
+├── README.md            # Project Documentation
+└── credentials.json     # Google OAuth Client ID (Not uploaded for security)
+<img width="1897" height="925" alt="Screenshot 2025-11-26 221644" src="https://github.com/user-attachments/assets/2066ebc9-879c-4e54-8e5c-0ea905afaec4" />
+<img width="1919" height="926" alt="Screenshot 2025-11-26 221617" src="https://github.com/user-attachments/assets/92c3efa9-0c6f-45bd-976e-31ba7565cc3d" />
+
 *Built for the Google AI Agents Intensive 2025.*
